@@ -45,7 +45,7 @@ body {
 .number {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  gap: 8px;
   margin-top: 6px;
 }
 
@@ -56,6 +56,7 @@ button {
   padding: 8px 12px;
   border-radius: 8px;
   font-size: 13px;
+  width: fit-content;
 }
 
 button:active {
@@ -72,8 +73,8 @@ function createLink(number, name) {
 let message =
 "Dear Parent of " + name + "%0A%0A" +
 "I hope this message finds you well. I am writing to share that I am the mentor for your child, and I am truly honored to have this opportunity.%0A%0A" +
-"_As a mentor, my aim is to create a positive and supportive environment that helps your child grow academically, emotionally, and personally._%0A%0A" +
-"_I strongly believe in open communication. Please feel free to reach out anytime._%0A%0A" +
+"As a mentor, my aim is to create a positive and supportive environment that helps your child grow academically, emotionally, and personally.%0A%0A" +
+"I strongly believe in open communication. Please feel free to reach out anytime._%0A%0A" +
 "_Warm regards,_%0AAnkit Chouhan";
 
 return "https://wa.me/91" + number + "?text=" + message;
